@@ -1,0 +1,262 @@
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .abhinoob {
+    font-family: Comfortaa, sans-serif;
+    font-size: 24px;
+    color: #003893;
+    cursor: pointer;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 48px;
+    font-family: Raleway, sans-serif;
+  }
+  
+  .tab-active,
+  .tab-default {
+    color: #003893;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .tab-active-child {
+    height: 2px;
+    background-color: #003893;
+    width: 100%;
+  }
+  
+  /* Mobile menu toggle */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #003893;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  /* About Content */
+  .about-simple-footer {
+    padding: 80px 120px;
+    background-color: #fff;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .title {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    color: #003893;
+    margin-bottom: 40px;
+    display: block;
+    text-align: center;
+  }
+  
+  .bg-2-icon {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto 40px;
+    border-radius: 50%;
+  }
+  
+  .text {
+    font-size: 20px;
+    line-height: 150%;
+    color: #828282;
+    max-width: 100%;
+    text-align: left;
+  }
+  
+  .hi-im-abhinav {
+    margin-bottom: 24px;
+  }
+  
+  .e-commerce-price-monitoring-an {
+    padding-left: 32px;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+  
+  .button-primary {
+    background-color: #003893;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+  }
+  
+  .button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 56, 147, 0.2);
+  }
+  
+  /* Footer */
+  .footer-icons {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 16px;
+    color: #828282;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+  }
+  
+  .social-icon {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 1200px) {
+    .header {
+      padding: 0 60px;
+    }
+    
+    .about-simple-footer {
+      padding: 80px 60px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about-simple-footer {
+      padding: 70px 40px;
+    }
+    
+    .title {
+      font-size: 40px;
+    }
+    
+    .text {
+      font-size: 18px;
+    }
+    
+    .bg-2-icon {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 0 30px;
+    }
+    
+    .nav {
+      position: fixed;
+      top: 56px;
+      right: -100%;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px 0;
+      gap: 20px;
+      z-index: 999;
+    }
+    
+    .nav.active {
+      right: 0;
+    }
+    
+    .menu-toggle {
+      display: flex;
+    }
+    
+    .menu-toggle.active .bar:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .menu-toggle.active .bar:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    .about-simple-footer {
+      padding: 70px 30px;
+    }
+    
+    .bg-2-icon {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .button-primary {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    
+    .about-simple-footer {
+      padding: 60px 20px;
+    }
+    
+    .text {
+      font-size: 16px;
+    }
+    
+    .e-commerce-price-monitoring-an {
+      padding-left: 20px;
+    }
+    
+    .social-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  

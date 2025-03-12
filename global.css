@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    line-height: normal;
+    padding-top: 56px; /* Account for fixed header */
+    font-family: Nunito, sans-serif;
+    color: #25282b;
+    overflow-x: hidden;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Smooth scrolling for the entire page */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Responsive font sizing */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  
